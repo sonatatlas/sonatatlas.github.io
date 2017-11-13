@@ -13,7 +13,7 @@ categories: jekyll useJekyll
 layout: post
 title: "Jekyll日志结构探索"
 date: "2017-11-13"
-categories: jekyll jekyll
+categories: jekyll usejekyll
 ---
 ```
 
