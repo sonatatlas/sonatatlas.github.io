@@ -1,0 +1,13 @@
+---
+layout: posts
+categories: markdown
+title: '在markdown中加入分页符'
+---
+
+过两天要去印书, 发现markdown可以直接把文章转成pdf, 但是拿捏不好分页的问题, 网上搜到了这个办法
+
+```html
+<div STYLE="page-break-after: always;"></div>
+```
+
+原来可以这么轻松的解决, markdown非常轻便, 对于我的使用上来说, 完全可以代替word了

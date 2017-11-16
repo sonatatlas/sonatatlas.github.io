@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Jekyll日志结构探索"
+title: "Jekyll日志结构"
 date: "2017-11-13"
-categories: jekyll useJekyll
+categories: Jekyll
 ---
 
 我正在编辑的是`kramdown`为引擎的`markdown`文件, 上面有一个这样的yaml解析头, 在文本编辑过程中, 我们需要使用[kramdown]语法.
