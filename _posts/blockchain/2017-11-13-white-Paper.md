@@ -1,7 +1,7 @@
 ---
 layout: post
-tittle: 以太坊白皮书探索
-categories: talkEth
+title: 以太坊白皮书探索
+categories: blockchain
 ---
 
 
