@@ -1,0 +1,73 @@
+Configuration file: /Users/mercurio/Documents/blog/_config.yml
+            Source: /Users/mercurio/Documents/blog
+       Destination: /Users/mercurio/Documents/blog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.667 seconds.
+ Auto-regeneration: enabled for '/Users/mercurio/Documents/blog'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+[2018-01-21 21:07:22] ERROR `/favicon.ico' not found.
+      Regenerating: 2 file(s) changed at 2018-01-22 03:14:06 ...done in 0.407713 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-22 03:14:41 ...done in 0.222805 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-22 03:14:53 ...done in 0.223274 seconds.
+[2018-01-23 13:05:52] ERROR `/favicon.ico' not found.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:05:56 ...done in 0.454702 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:06:06 ...done in 0.260879 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:06:10 ...done in 0.237798 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:06:11 ...done in 0.282846 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:06:14 ...done in 0.238605 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:06:17 ...done in 0.236569 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-23 13:06:38 ...done in 0.257945 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:38 ...done in 0.277535 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:40 ...done in 0.240443 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:43 ...done in 0.239159 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:46 ...done in 0.252997 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:50 ...done in 0.232342 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:54 ...done in 0.239505 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:07:57 ...done in 0.245752 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:08:06 ...done in 0.241658 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:08:10 ...done in 0.233023 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:08:14 ...done in 0.241375 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:08:20 ...done in 0.251923 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-23 13:08:45 ...done in 0.254196 seconds.
+      Regenerating: 3 file(s) changed at 2018-01-23 13:09:26 ...done in 0.302483 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:09:32 ...done in 0.244344 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-23 13:10:05 ...done in 0.288029 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:09:14 ...done in 0.53532 seconds.
+[2018-01-24 09:09:23] ERROR `/favicon.ico' not found.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:09:45 ...done in 0.275796 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:09:51 ...done in 0.275885 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:10:00 ...done in 0.257571 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:10:04 ...done in 0.262041 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:10:08 ...done in 0.270917 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:10:21 ...done in 0.346392 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:10:50 ...done in 0.461405 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:11:29 ...done in 0.319415 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:13:00 ...done in 0.270158 seconds.
+      Regenerating: 3 file(s) changed at 2018-01-24 09:14:10 ...done in 0.259838 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:14:49 ...done in 0.24806 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:14:57 ...done in 0.265932 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:03 ...done in 0.252213 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:06 ...done in 0.265259 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:10 ...done in 0.24136 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:34 ...done in 0.292225 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:37 ...done in 0.257199 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:40 ...done in 0.239286 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:46 ...done in 0.242149 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:15:51 ...done in 0.250283 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:16:30 ...done in 0.268533 seconds.
+      Regenerating: 3 file(s) changed at 2018-01-24 09:22:21 ...done in 0.381187 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:22:36 ...done in 0.260399 seconds.
+      Regenerating: 2 file(s) changed at 2018-01-24 09:22:43 ...done in 0.251308 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:24:49 ...done in 0.257338 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:27:42 ...done in 0.27997 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:31:12 ...done in 0.264304 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:33:11 ...done in 0.276983 seconds.
+      Regenerating: 3 file(s) changed at 2018-01-24 09:34:13 ...done in 0.304644 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:35:57 ...done in 0.292278 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:38:29 ...done in 0.248126 seconds.
+      Regenerating: 1 file(s) changed at 2018-01-24 09:42:59 ...done in 0.254207 seconds.
+      Regenerating: 3 file(s) changed at 2018-01-24 10:05:32 ...done in 0.28501 seconds.
+2018-01-25 09:04 fsevent_watch[9490] (FSEvents.framework) server_gone_StreamRef_callback: ERROR: FSEvents_connect() => (os/kern) exception protected (32)
+2018-01-25 09:04 fsevent_watch[9490] (FSEvents.framework) server_gone_StreamRef_callback: failed to reconnect to server! (kr 0x20)
