@@ -4,15 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+//刚被V友发现About是 jekyll 送的那个 - -
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# 真正的about可能是这样：
+- tel: 18626153029
+- email: udtrokia@163.com
+- twitter: udtrokia
+- wechat: Ilevrunning
+- 微信公众号: 1439  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+写代码是为了实现自己的价值，  
+喜欢摇滚乐, 一个大梦想是成为摇滚巨星。
 
-
-[jekyll-organization]: https://github.com/jekyll
