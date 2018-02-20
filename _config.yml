@@ -16,7 +16,7 @@
 title: Mercurio
 email: udtrokia@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- 不止于程序,男人当然是想做出一些有价值的事情。
+ not only a coder, but a dreamer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://udtrokia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: udtrokia
