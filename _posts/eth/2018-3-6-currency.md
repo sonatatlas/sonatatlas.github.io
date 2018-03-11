@@ -5,3 +5,6 @@ categories: eth
 ---
 
 Try to publish a currency based eth named __CPC__
+
+
+select from Qu
