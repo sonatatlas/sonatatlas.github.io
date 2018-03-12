@@ -267,4 +267,135 @@ Two Gatsby APIs `onCreateMode` and `createPages`. These are two workhorse APIs y
 
 We do our best to make Gatsby APIs simple to implement. To implement an API, you export a function with the name of the API from `gatsby-node.js`
 
-So let's do that. In the root of our site, create a file named
+So let's do that. In the root of our site, create a file named `gatsby-node.js`.
+
+```javascript
+exports.onCeateNode = ({ node }) => {
+    console.log( node.internal.type )
+}
+```
+
+Stop and restart the development server. As you do, you'll see quite a few newly created nodes get logged to the terminal console. Let's use this API to add the slugs for our Markdown pages to `MarkdownRemark` nodes.  
+
+Change our function so it now is only looking at `MarkdownRemark` nodes.
+
+```
+exports.onCreateNode = ({ node }) => {
+    if (node.internal.type === `MarkdownRemark` ) {
+        console.log(node.internal.type)
+    }
+}
+```
+> the nodes show us plugin nodes of graphql, MarkdownRemark, we just added it
+
+We want to use each Markdown file name to create the page slug. So `pandas-and-bananas.md` will become `/pandas-and-banans/`. traverse the "node graph" to its parent `File` nodes contain data we need about files on disk.
+
+```js
+exports.onCreateNode = ({ node, getNode }) => {
+    if ( node.interal.type === `MarkdownRemark` ){
+        const fileNode = getNode(node.parent)
+        console.log(`\n`, fileNode.relativePath)
+    }
+}
+```
+
+> then, we can see the filenames in build time.
+> while, `gatsby-node.js` init the environment during build time
+
+The `gatsby-source-filesystem` plugin ships with a function Creating slugs?
+It makes `pandas-and-bananas.md` to `/pandas-and-banans/`
+
+```js
+const { createFilePath } = require(`gatsby-source-filesystem`);
+exports.onCreateNode = ({ node, getNode }) => {
+    if (node.internal.type === `MarkdownRemark`){
+        console.log(createFilePath({ node, getNode, basePath: `pages` }))
+    }
+}
+```
+> if you change the basePath to 'src', output will be `/pages/pandas-to-bananas`
+
+The func handles finding the parent `File` node along with creating the slug.
+Now, add new slugs directly onto the `MarkdownRemark` nodes.
+we'll use a function passed to our API implementation called `createNodeField`. This function allows us to create additional fields on nodes created by other plugins.
+Only the original creator of a node can directly modify the node -- all other plugins (including our gatsby-node.js), must use this function to create additional fields.
+
+```js
+const { createFilePath } = require(`gatsby-source-filesystem`);
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+    const { createNodeField } = boundActionCreators
+    if (node.internal.type === `MarkdownRemark`) {
+        //change markdown file
+        const slug = createFilePath({ node, getNode, basePath: `pages` })
+        createNodeField({
+            node, 
+            name: `slug`,
+            value: slug
+        })
+    }
+}
+```
+> We just add new field slug to the MarkdownRemark !
+
+Restart the development server and open or refresh GraphiQL. Then run this query to see our new slugs
+
+```javascript
+{
+    allMarkdownRemark {
+        edges {
+            node {
+                field {
+                    slug
+                }
+            }
+        }
+    }
+}
+
+```
+
+Now that the slugs are created, we can create the pages.
+
+In the same `gatsby-node.js` file.
+Here we tell Gatsby about our pages -- what are their paths, what template component do they use, etc.
+
+```javascript
+const { createFilePath } = require(`gatsby-source-filesystem`);
+
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
+};
+exports.createPages = ({ graphql, boundActionCreators }) => {
+    return new Promise(( resolve, reject ) => {
+        graqhql(`
+            {
+                allMarkdownRemark {
+                    edges {
+                        node {
+                            fields {
+                                slug
+                            }
+                        }
+                    }
+                }
+            }
+        `).then( result => {
+            console.log(JSON.stringify( result, null, 4))
+            resolve()
+        })
+    })
+}
+```
+> Take a look at the value `slug`, we set the filepath to the query named `slug`
+> So, after this long query, we inject a slug to the page! lol~
+
+Now that the slugs are created, we can create the pages.
+createNode and createPage just like the state of react
