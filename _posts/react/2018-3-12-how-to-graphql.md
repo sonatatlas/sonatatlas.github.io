@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: react
-title: How to GraphQL
+title: How to GraphQL in Awesome-Gatsby
 ---
 
 Gatsby's data layer is powered by GraphQL. If you're new to GraphQL, this section may feel a little overwhelming.
