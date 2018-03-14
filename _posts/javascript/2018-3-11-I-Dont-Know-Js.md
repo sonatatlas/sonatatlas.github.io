@@ -1,5 +1,7 @@
 ---
-layout:post
-title: I Dont Know Javascript
+layout: post
 categories: javascript
+title: I
 ---
+
+value?

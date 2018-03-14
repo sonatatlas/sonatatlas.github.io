@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EACCES: permission denied
+title: npm permission denied
 categories: linux
 ---
 
