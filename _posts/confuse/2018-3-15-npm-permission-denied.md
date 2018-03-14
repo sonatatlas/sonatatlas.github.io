@@ -31,7 +31,7 @@ npm -g install cnpm
 npm -g install gatsby-cli
 ```
 
-> Some global packages needs to write files in root directory, it might be obstruct by our npm dir, and npm authority; however, yarn global packages is located at your users' file. checkout `~.yarn`
+> Some global packages needs to write files in root directory, it might be obstruct by our npm dir, and npm authority; however, yarn global packages is located at your users' file. checkout `~/.yarn`
 
 __npm authority__
 
