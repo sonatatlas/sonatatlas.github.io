@@ -30,4 +30,4 @@ _forever:_
 }
 ```
 
-[cnmirror][https://www.docker-cn.com/registry-mirror]
+[cnmirror]:https://www.docker-cn.com/registry-mirror

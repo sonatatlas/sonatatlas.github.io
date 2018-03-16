@@ -16,8 +16,8 @@ This is a MySQL demo
 sudo docker pull mysql
 ```
 
-+ Check images
++ Run 
 
 ```
-
+# docker run --name mysql -p 3306:3306 
 ```
