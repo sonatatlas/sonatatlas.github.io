@@ -66,7 +66,7 @@ def hello():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
-```
+```  
 
 # Build the app
 
@@ -89,13 +89,13 @@ Find your image:
 ```
 REPOSITORY            TAG                 IMAGE ID
 firstimage         latest              326387cea398
-```
+```  
 
 # Run the app
 
 ```
 docker run -p 4000:80 firstimage
-```
+```  
 
 # Share your image
 
@@ -103,13 +103,13 @@ __login in with your dockerID__
 
 ```shell
 docker login
-```
+```  
 
 __Tag the image__
 
 ```
 docker tag firstimage mercury/get-started:part2
-```
+```  
 
 __See your docker!__
 
@@ -121,13 +121,13 @@ firstiamge            latest              d9e555c53008        3 minutes ago     
 mercury/get-started   part2               d9e555c53008        3 minutes ago       195MB
 python                2.7-slim            1c7128a655f6        5 days ago          183MB
 ...
-```
+```  
 
 __Publish the image__
 
 ```
 docker push username/repository:tag
-```
+```  
 
 from now on, you can use `docker run` and run your app on any machine with this command!!
 ```
