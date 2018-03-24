@@ -4,13 +4,13 @@ title: Import Node Module in Typescript
 categories: typescript
 ---
 
-## Install your node modules
+# Install your node modules
 
 ```
 yarn add -D @types/node
 ```  
 
-## Add types
+# Add types
 
 ```json
 {
@@ -22,7 +22,7 @@ yarn add -D @types/node
 
 ```  
 
-## tsconfig
+# tsconfig
 
 ```json
 {
