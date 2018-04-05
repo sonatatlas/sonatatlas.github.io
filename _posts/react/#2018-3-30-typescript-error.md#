@@ -1,0 +1,33 @@
+---
+layout: post
+title: React Typescript Error
+title: react
+---
+
+- error TS7031: Binding element 'navigate' implicitly has an 'any' type.  
+
+```tsx
+export const Back = ({goBack}: Props) => (
+  <TouchableOpacity
+    onPress={() => goBack()}
+    style={[boxStyle.ctn]}>
+    <Text style={textStyle.intro}>{"<<------------"}</Text>
+  </TouchableOpacity>
+);
+```
+
+_solution_  
+
+```
+export interface Props {
+    goBack: object;
+}
+
+export const Back = ({goBack}: Props) => (
+  <TouchableOpacity
+    onPress={() => goBack()}
+    style={[boxStyle.ctn]}>
+    <Text style={textStyle.intro}>{"<<------------"}</Text>
+  </TouchableOpacity>
+);
+```
