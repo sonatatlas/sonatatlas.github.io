@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Typescript Error
-title: javascript
+categories: react
 ---
 
 ### TS4082  

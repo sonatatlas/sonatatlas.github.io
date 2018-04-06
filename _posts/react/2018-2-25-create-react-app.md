@@ -3,12 +3,12 @@ layout: post
 categories: react
 title: create-react-app
 ---
-though the offiical said that we should judege using redux or not after thinking of if we really need it. most of my projects can't abandon redux. andway, `create-react-app` did well. but anytime I start-up a new project, it takes me a few minutes to change the content of App.js/index.js and I used to delete some useless files. so I init this project to fixed my environment.
+though the offcial said that we should judge using redux or not after thinking of if we really need it. most of my projects can't abandon redux. anyway, `create-react-app` did well. but anytime I start-up a new project, it takes me a few minutes to change the content of App.js/index.js and I used to delete some useless files. so I init this project to fixed my environment.
 First time I tried to create a new wheel, just like create-react-app lol~ Soon I found this cost a lot. I decide to set up my usual files structure as the first-step.
 
 tried to understand the structure of create-react-app
 
-# reaquire modules
+# require modules
 + validate-npm-package-name
 + chalk
 + commander

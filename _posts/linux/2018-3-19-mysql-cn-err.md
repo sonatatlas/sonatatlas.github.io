@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL ZN ERR
+title: MySQL ZH ERR
 categories: linux
 ---
 
@@ -27,4 +27,4 @@ SET character_set_server = utf8 ;
 ...
 ```
 
-+ install ZN environment in system
++ install ZH environment in system

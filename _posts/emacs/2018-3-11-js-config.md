@@ -4,7 +4,7 @@ categories: emacs
 title: Set js as jsx in web-mode
 ---
 
-indent is a big problem while developing. 
+Indent is a big problem while developing. 
 I used to write jsx without html indent... 
 what a tough time, I can't look back
 
