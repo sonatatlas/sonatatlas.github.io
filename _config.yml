@@ -23,9 +23,11 @@ twitter_username: udtrokia
 github_username:  udtrokia
 
 # Build settings
+## markdown
 markdown: kramdown
 theme: minima
 
+## plugins  
 plugins:
   - jekyll-feed
   - jekyll-livereload

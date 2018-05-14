@@ -4,10 +4,20 @@ title: No passwd ssh
 categories: linux
 ---
 
+
+#### one line
+
+```
+    ssh-copy-id -i ~/.ssh/id_rsa.pub <romte_ip>
+```
+
+
+### raw
+
 + Generate keypair
 
 ```
-ssh-keygen -t rsa -P
+ssh-keygen
 ```
 
 + Scp rsa.pub to remote-server
