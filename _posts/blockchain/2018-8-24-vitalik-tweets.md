@@ -4,6 +4,11 @@ categories: blockchain
 layout: post
 ---
 
+#### 
+
+## Ethereum's Casper research
+
+
 
 #### 1
 
@@ -77,8 +82,6 @@ This was anathema to PoW proponents because it feels like a trust assumption: yo
 
 #### 11
 
-
-
 But to us dirty subjectivists, it did not seem like a big deal; you need some trusted source to tell you what the consensus rules of the blockchain are in any case (and don't forget software updates), so the additional trust required by this PoS assumption is not large.
 
 #### 
@@ -97,14 +100,14 @@ https://blog.ethereum.org/2016/12/07/history-casper-chapter-2/
 
 Now that we settled on deposits and penalties, we had to decide what those deposits and penalties _are_. We knew that we wanted an "economic finality" property, where validators would sign on blocks in such a way that ...
 
-
+#### 
 
 #### 14
 
 
 ...once a block was "finalized", no _conflicting_ block could be finalized without a large portion of validators having to sign messages that conflict with their earlier messages in a way that the blockchain could detect, and hence penalize.
 
-
+#### 
 
 #### 15
 
@@ -141,7 +144,7 @@ The odds on validators' bets would start off low, but as validators saw each oth
 
 In the meantime, Vlad started heavily researching mechanism design, particularly with an eye to making Casper more robust against oligopolies, and we also started looking at consensus algorithms inspired by traditional byzantine fault tolerance theory, such as Tendermint.
 
-
+#### 
 
 #### 20
 
@@ -518,7 +521,7 @@ The most recent development of all is a result that latest message driven GHOST 
 
 
 The main tradeoff between FFG and CBC is that CBC seems to have nicer theoretical properties, but FFG seems to be easier to implement.
- 
+
 #### 
 
 #### 70
@@ -564,4 +567,7 @@ The long-run goal of this research is to reduce reliance on the social layer as 
 
 
 What's left now? On the FFG side, formal proofs, refinements to the specification, and ongoing progress on implementation (already started by >=3 teams!), with an eye to safe and speedy deployment. On the CBC side, much of the same. Onward and upward!
+
+#### 
+
 
