@@ -48,6 +48,7 @@ exclude:
 # include my files
 include:
   - _public
+  - _notes
 
 # paginate
 per_page: 5
