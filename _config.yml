@@ -17,7 +17,7 @@ title: Mercury
 email: udtrokia@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Just.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://udtrokia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: udtrokia
 github_username:  udtrokia
@@ -31,7 +31,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-livereload
-  - jekyll-paginate
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
