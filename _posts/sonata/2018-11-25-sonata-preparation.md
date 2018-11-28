@@ -32,7 +32,22 @@ Sonata 的设计是为了实现 Atlas _ 我关于 "Web3.0" 的答案。受区块
 | Python     | Interpreted | Concise        | Object    | Data / Script      |
 | Javascript | Interpreted | Cross-platform | ?Object   | Browser / Anywhere |
 
+# 语法
 
-# 待处理
+变量，运算符，条件，函数，表达式，语句
 
-变量，运算符，条件，函数，表达式，语句，递归的实现...
+# 算法
+
+递归, 循环, 迭代器，Map，排序，筛选
+
+# ABI
+
+输入/输出, 内存
+
+# Module
+
+网络，加密
+
+# Others
+
+编译
