@@ -3,7 +3,8 @@
 @import "syntax";
 @font-face {
     font-family: HanYi;
-    src: url(/assets/fonts/XiaoDou.otf);
+    font-stretch: 50% 200%;
+    src: url(/assets/fonts/HanYi.ttf);
 }
 
 /* Basic */
@@ -12,7 +13,7 @@ html {
     height: 100%;
     font-size: 16px;
     background: #fafafa;
-    font-family: 'Nothing You Could Do', 
+    font-family: 'Nothing You Could Do', "HanYi",
                  '-apple-system', 'BlinkMacSystemFont',
                  'Segoe UI', 'Helvetica', 'Arial',
                  'sans-serif', 'Apple Color Emoji',
@@ -22,7 +23,6 @@ html {
 body {
     margin: 0 auto;
     max-width: 800px;
-    line-height: 1.8em;
 }
 
 section {
@@ -34,6 +34,11 @@ code {
     * {
         font-family: "Nothing You Could Do";
     }
+}
+
+blockquote {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 h1 {
