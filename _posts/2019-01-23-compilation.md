@@ -37,14 +37,17 @@ Lexical preprocessors are __the lowest-level of preprocessors as they only requi
 ## Syntactic preprocessors
 Syntactic preprocessors were introduced with the Lisp family of languages. Their role is __to transform syntax trees according to a number of user-defined rules.__ For some programming languages, the rules are written in the same language as the program (compile-time reflection). This is the case with Lisp and OCaml. Some other languages rely on a fully external language to define the transformations, such as the XSLT preprocessor for XML, or its statically typed counterpart CDuce.
 
-### Customizing syntax
-A good example of syntax customization is the existence of two different syntaxes in the Objective Caml programming language. __Programs may be written indifferently using the "normal syntax" or the "revised syntax", and may be pretty-printed with either syntax on demand.__
++ __Customizing syntax__
 
-### Extending a language
-The best examples of language extension through macros are found in the Lisp family of languages. While the languages, by themselves, __are simple dynamically typed functional cores__, the standard distributions of Scheme or Common Lisp permit imperative or object-oriented programming, as well as static typing. Almost all of these features are implemented by syntactic preprocessing, although it bears noting that the "macro expansion" phase of compilation is handled by the compiler in Lisp. This can still be considered a form of preprocessing, since it takes place before other phases of compilation.
+    A good example of syntax customization is the existence of two different syntaxes in the Objective Caml programming language. __Programs may be written indifferently using the "normal syntax" or the "revised syntax", and may be pretty-printed with either syntax on demand.__
 
-### Specializing a language
-One of the unusual features of the Lisp family of languages is the possibility of __using macros to create an internal DSL__. Typically, in a large Lisp-based project, a module may be written in a variety of such minilanguages, one perhaps using a SQL-based dialect of Lisp, another written in a dialect specialized for GUIs or pretty-printing, etc. Common Lisp's standard library contains an example of this level of syntactic abstraction in the form of the LOOP macro, which implements an Algol-like minilanguage to describe complex iteration, while still enabling the use of standard Lisp operators.
++ __Extending a language__
+
+    The best examples of language extension through macros are found in the Lisp family of languages. While the languages, by themselves, __are simple dynamically typed functional cores__, the standard distributions of Scheme or Common Lisp permit imperative or object-oriented programming, as well as static typing. Almost all of these features are implemented by syntactic preprocessing, although it bears noting that the "macro expansion" phase of compilation is handled by the compiler in Lisp. This can still be considered a form of preprocessing, since it takes place before other phases of compilation.
+
++ __Specializing a language__
+
+    One of the unusual features of the Lisp family of languages is the possibility of __using macros to create an internal DSL__. Typically, in a large Lisp-based project, a module may be written in a variety of such minilanguages, one perhaps using a SQL-based dialect of Lisp, another written in a dialect specialized for GUIs or pretty-printing, etc. Common Lisp's standard library contains an example of this level of syntactic abstraction in the form of the LOOP macro, which implements an Algol-like minilanguage to describe complex iteration, while still enabling the use of standard Lisp operators.
 
 ## General purpose preprocessor
 Most preprocessors are specific to a particular __data processing task (e.g., compiling the C language).__ A preprocessor may be promoted as being general purpose, meaning that it is not aimed at a specific usage or programming language, and is intended to be used for a wide variety of text processing tasks.
@@ -153,17 +156,21 @@ Lexical preprocessors are __the lowest-level of preprocessors as they only requi
 ## Syntactic preprocessors
 Syntactic preprocessors were introduced with the Lisp family of languages. Their role is __to transform syntax trees according to a number of user-defined rules.__ For some programming languages, the rules are written in the same language as the program (compile-time reflection). This is the case with Lisp and OCaml. Some other languages rely on a fully external language to define the transformations, such as the XSLT preprocessor for XML, or its statically typed counterpart CDuce.
 
-### Customizing syntax
-A good example of syntax customization is the existence of two different syntaxes in the Objective Caml programming language. __Programs may be written indifferently using the "normal syntax" or the "revised syntax", and may be pretty-printed with either syntax on demand.__
++ __Customizing syntax__
+  
+  A good example of syntax customization is the existence of two different syntaxes in the Objective Caml programming language. __Programs may be written indifferently using the "normal syntax" or the "revised syntax", and may be pretty-printed with either syntax on demand.__
 
-### Extending a language
-The best examples of language extension through macros are found in the Lisp family of languages. While the languages, by themselves, __are simple dynamically typed functional cores__, the standard distributions of Scheme or Common Lisp permit imperative or object-oriented programming, as well as static typing. Almost all of these features are implemented by syntactic preprocessing, although it bears noting that the "macro expansion" phase of compilation is handled by the compiler in Lisp. This can still be considered a form of preprocessing, since it takes place before other phases of compilation.
++ __Extending a language__
+  
+  The best examples of language extension through macros are found in the Lisp family of languages. While the languages, by themselves, __are simple dynamically typed functional cores__, the standard distributions of Scheme or Common Lisp permit imperative or object-oriented programming, as well as static typing. Almost all of these features are implemented by syntactic preprocessing, although it bears noting that the "macro expansion" phase of compilation is handled by the compiler in Lisp. This can still be considered a form of preprocessing, since it takes place before other phases of compilation.
 
-### Specializing a language
-One of the unusual features of the Lisp family of languages is the possibility of __using macros to create an internal DSL__. Typically, in a large Lisp-based project, a module may be written in a variety of such minilanguages, one perhaps using a SQL-based dialect of Lisp, another written in a dialect specialized for GUIs or pretty-printing, etc. Common Lisp's standard library contains an example of this level of syntactic abstraction in the form of the LOOP macro, which implements an Algol-like minilanguage to describe complex iteration, while still enabling the use of standard Lisp operators.
++ __Specializing a language__
+  
+  One of the unusual features of the Lisp family of languages is the possibility of __using macros to create an internal DSL__. Typically, in a large Lisp-based project, a module may be written in a variety of such minilanguages, one perhaps using a SQL-based dialect of Lisp, another written in a dialect specialized for GUIs or pretty-printing, etc. Common Lisp's standard library contains an example of this level of syntactic abstraction in the form of the LOOP macro, which implements an Algol-like minilanguage to describe complex iteration, while still enabling the use of standard Lisp operators.
 
-## General purpose preprocessor
-Most preprocessors are specific to a particular __data processing task (e.g., compiling the C language).__ A preprocessor may be promoted as being general purpose, meaning that it is not aimed at a specific usage or programming language, and is intended to be used for a wide variety of text processing tasks.
++ __General purpose preprocessor__
+  
+  Most preprocessors are specific to a particular __data processing task (e.g., compiling the C language).__ A preprocessor may be promoted as being general purpose, meaning that it is not aimed at a specific usage or programming language, and is intended to be used for a wide variety of text processing tasks.
 
 M4 is probably the most well known example of such a general purpose preprocessor, although the C preprocessor is sometimes used in a non-C specific role. Examples:
 
@@ -189,29 +196,41 @@ The context in which execution takes place is crucial. Very few programs execute
 ## Process
 Prior to execution, a program must first be written. This is generally done in source code, which is then compiled at compile time (and statically linked at link time) to an executable. This executable is then invoked, most often by an operating system, which loads the program into memory (load time), possibly performs dynamic linking, and then begins execution by moving control to the entry point of the program; all these steps depend on the Application Binary Interface of the operating system. At this point execution begins and the program enters run time. The program then runs until it ends, either normal termination or a crash.
 
-### Thread
-In computer science, a thread of execution is __the smallest sequence of programmed instructions that can be managed independently by a scheduler__, which is typically a part of the operating system. The implementation of threads and processes differs between operating systems, but in most cases a thread is a component of a process. Multiple threads can exist within one process, executing concurrently and sharing resources such as memory, while different processes do not share these resources. In particular, the threads of a process share its executable code and the values of its dynamically allocated variables and non-thread-local global variables at any given time.
++ __Thread__
+  
+  In computer science, a thread of execution is __the smallest sequence of programmed instructions that can be managed independently by a scheduler__, which is typically a part of the operating system. The implementation of threads and processes differs between operating systems, but in most cases a thread is a component of a process. Multiple threads can exist within one process, executing concurrently and sharing resources such as memory, while different processes do not share these resources. In particular, the threads of a process share its executable code and the values of its dynamically allocated variables and non-thread-local global variables at any given time.
 
-## Interpreter
-__A system that executes a program__ is called an interpreter of the program. Loosely speaking, an interpreter actually does what the program says to do. This contrasts with a language translator that converts a program from one language to another. The most common language translators are compilers. Translators typically convert their source from a high-level, human readable language into a lower-level language (sometimes as low as native machine code) that is simpler and faster for the processor to directly execute. The idea is that the ratio of executions to translations of a program will be large; that is, a program need only be compiled once and can be run any number of times. This can provide a large benefit for translation versus direct interpretation of the source language. One trade-off is that development time is increased, because of the compilation. In some cases, only the changed files must be recompiled. Then the executable needs to be relinked. For some changes, the executable must be rebuilt from scratch. As computers and compilers become faster, this fact becomes less of an obstacle. Also, the speed of the end product is typically more important to the user than the development time.
++ __Channel__
+  
+  In computing, a channel is a model for interprocess communication and synchronization via message passing. A message may be sent over a channel, and another process or thread is able to receive messages sent over a channel it has a reference to, as a stream. Different implementations of channels may be buffered or not, and either synchronous or asynchronous.
 
-### Bytecode interpreters
-There is __a spectrum of possibilities between interpreting and compiling, depending on the amount of analysis performed before the program is executed.__ For example, Emacs Lisp is compiled to bytecode, which is a highly compressed and optimized representation of the Lisp source, but is not machine code (and therefore not tied to any particular hardware). This "compiled" code is then interpreted by a bytecode interpreter (itself written in C). The compiled code in this case is machine code for a virtual machine, which is implemented not in hardware, but in the bytecode interpreter. Such compiling interpreters are sometimes also called compreters. In a bytecode interpreter each instruction starts with a byte, and therefore bytecode interpreters have up to 256 instructions, although not all may be used. Some bytecodes may take multiple bytes, and may be arbitrarily complicated.
++ __Interpreter__
+  
+  __A system that executes a program__ is called an interpreter of the program. Loosely speaking, an interpreter actually does what the program says to do. This contrasts with a language translator that converts a program from one language to another. The most common language translators are compilers. Translators typically convert their source from a high-level, human readable language into a lower-level language (sometimes as low as native machine code) that is simpler and faster for the processor to directly execute. The idea is that the ratio of executions to translations of a program will be large; that is, a program need only be compiled once and can be run any number of times. This can provide a large benefit for translation versus direct interpretation of the source language. One trade-off is that development time is increased, because of the compilation. In some cases, only the changed files must be recompiled. Then the executable needs to be relinked. For some changes, the executable must be rebuilt from scratch. As computers and compilers become faster, this fact becomes less of an obstacle. Also, the speed of the end product is typically more important to the user than the development time.
 
-### Threaded code interpreters
-Threaded code interpreters are __similar to bytecode interpreters but instead of bytes they use pointers.__ Each "instruction" is a word that points to a function or an instruction sequence, possibly followed by a parameter. The threaded code interpreter either loops fetching instructions and calling the functions they point to, or fetches the first instruction and jumps to it, and every instruction sequence ends with a fetch and jump to the next instruction. Unlike bytecode there is no effective limit on the number of different instructions other than available memory and address space. The classic example of threaded code is the Forth code used in Open Firmware systems: the source language is compiled into "F code" (a bytecode), which is then interpreted by a virtual machine.
++ __Bytecode interpreters__
+  
+  There is __a spectrum of possibilities between interpreting and compiling, depending on the amount of analysis performed before the program is executed.__ For example, Emacs Lisp is compiled to bytecode, which is a highly compressed and optimized representation of the Lisp source, but is not machine code (and therefore not tied to any particular hardware). This "compiled" code is then interpreted by a bytecode interpreter (itself written in C). The compiled code in this case is machine code for a virtual machine, which is implemented not in hardware, but in the bytecode interpreter. Such compiling interpreters are sometimes also called compreters. In a bytecode interpreter each instruction starts with a byte, and therefore bytecode interpreters have up to 256 instructions, although not all may be used. Some bytecodes may take multiple bytes, and may be arbitrarily complicated.
 
-### Abstract syntax tree interpreters
-In the spectrum between interpreting and compiling, another approach is to __transform the source code into an optimized abstract syntax tree (AST),__ then execute the program following this tree structure, or use it to generate native code just-in-time. In this approach, each sentence needs to be parsed just once. As an advantage over bytecode, the AST keeps the global program structure and relations between statements (which is lost in a bytecode representation), and when compressed provides a more compact representation. Thus, using AST has been proposed as a better intermediate format for just-in-time compilers than bytecode. Also, it allows the system to perform better analysis during runtime.
++ __Threaded code interpreters__
+  
+  Threaded code interpreters are __similar to bytecode interpreters but instead of bytes they use pointers.__ Each "instruction" is a word that points to a function or an instruction sequence, possibly followed by a parameter. The threaded code interpreter either loops fetching instructions and calling the functions they point to, or fetches the first instruction and jumps to it, and every instruction sequence ends with a fetch and jump to the next instruction. Unlike bytecode there is no effective limit on the number of different instructions other than available memory and address space. The classic example of threaded code is the Forth code used in Open Firmware systems: the source language is compiled into "F code" (a bytecode), which is then interpreted by a virtual machine.
 
-### Just-in-time compilation
-Further blurring the distinction between interpreters, bytecode interpreters and compilation is just-in-time compilation (JIT), __a technique in which the intermediate representation is compiled to native machine code at runtime.__ This confers the efficiency of running native code, at the cost of startup time and increased memory use when the bytecode or AST is first compiled. Adaptive optimization is a complementary technique in which the interpreter profiles the running program and compiles its most frequently executed parts into native code. Both techniques are a few decades old, appearing in languages such as Smalltalk in the 1980s.
++ __Abstract syntax tree interpreters__
+  
+  In the spectrum between interpreting and compiling, another approach is to __transform the source code into an optimized abstract syntax tree (AST),__ then execute the program following this tree structure, or use it to generate native code just-in-time. In this approach, each sentence needs to be parsed just once. As an advantage over bytecode, the AST keeps the global program structure and relations between statements (which is lost in a bytecode representation), and when compressed provides a more compact representation. Thus, using AST has been proposed as a better intermediate format for just-in-time compilers than bytecode. Also, it allows the system to perform better analysis during runtime.
 
-### Self-interpreter
-A self-interpreter is a programming language interpreter written in __a programming language which can interpret itself;__ an example is a BASIC interpreter written in BASIC. Self-interpreters are related to self-hosting compilers.
++ __Just-in-time compilation__
+  
+  Further blurring the distinction between interpreters, bytecode interpreters and compilation is just-in-time compilation (JIT), __a technique in which the intermediate representation is compiled to native machine code at runtime.__ This confers the efficiency of running native code, at the cost of startup time and increased memory use when the bytecode or AST is first compiled. Adaptive optimization is a complementary technique in which the interpreter profiles the running program and compiles its most frequently executed parts into native code. Both techniques are a few decades old, appearing in languages such as Smalltalk in the 1980s.
 
-### Microcode
-Microcode is a very commonly used technique "that imposes an interpreter between the hardware and the architectural level of a computer". As such, the microcode is __a layer of hardware-level instructions that implement higher-level machine code instructions or internal state machine sequencing in many digital processing elements.__ Microcode is used in general-purpose central processing units, as well as in more specialized processors such as microcontrollers, digital signal processors, channel controllers, disk controllers, network interface controllers, network processors, graphics processing units, and in other hardware.
++ __Self-interpreter__
+  
+  A self-interpreter is a programming language interpreter written in __a programming language which can interpret itself;__ an example is a BASIC interpreter written in BASIC. Self-interpreters are related to self-hosting compilers.
+
++ __Microcode__
+  
+  Microcode is a very commonly used technique "that imposes an interpreter between the hardware and the architectural level of a computer". As such, the microcode is __a layer of hardware-level instructions that implement higher-level machine code instructions or internal state machine sequencing in many digital processing elements.__ Microcode is used in general-purpose central processing units, as well as in more specialized processors such as microcontrollers, digital signal processors, channel controllers, disk controllers, network interface controllers, network processors, graphics processing units, and in other hardware.
 
 # Inter-process Communication
 In computer science, inter-process communication or interprocess communication (IPC) refers specifically to the mechanisms an operating system provides to __allow the processes to manage shared data__. Typically, applications can use IPC, categorized as clients and servers, where the client requests data and the server responds to client requests. Many applications are both clients and servers, as commonly seen in distributed computing. Methods for doing IPC are divided into categories which vary based on software requirements, such as performance and modularity requirements, and system circumstances, such as network bandwidth and latency.
@@ -220,49 +239,63 @@ IPC is very important to the design process for microkernels and nanokernels. Mi
 
 ## Approaches
 
-### File
-A record stored on disk, or a record synthesized on demand by a file server, which can be accessed by multiple processes.
++ __File__
+  
+  A record stored on disk, or a record synthesized on demand by a file server, which can be accessed by multiple processes.
 
-### Signal
-A system message sent from one process to another, not usually used to transfer data but instead used to remotely command the partnered process.
++ __Signal__
+  
+  A system message sent from one process to another, not usually used to transfer data but instead used to remotely command the partnered process.
 
-### Socket
-Data sent over a network interface, either to a different process on the same computer or to another computer on the network. Stream-oriented (TCP; data written through a socket requires formatting to preserve message boundaries) or more rarely message-oriented (UDP, SCTP).
++ __Socket__
+  
+  Data sent over a network interface, either to a different process on the same computer or to another computer on the network. Stream-oriented (TCP; data written through a socket requires formatting to preserve message boundaries) or more rarely message-oriented (UDP, SCTP).
 
-### Unix domain socket
-Similar to an internet socket but all communication occurs within the kernel. Domain sockets use the file system as their address space. Processes reference a domain socket as an inode, and multiple processes can communicate with one socket
++ __Unix domain socket__
+  
+  Similar to an internet socket but all communication occurs within the kernel. Domain sockets use the file system as their address space. Processes reference a domain socket as an inode, and multiple processes can communicate with one socket
 
-### Message queue
-A data stream similar to a socket, but which usually preserves message boundaries. Typically implemented by the operating system, they allow multiple processes to read and write to the message queue without being directly connected to each other.
++ __Message queue__
+  
+  A data stream similar to a socket, but which usually preserves message boundaries. Typically implemented by the operating system, they allow multiple processes to read and write to the message queue without being directly connected to each other.
 
-### Pipe
-A unidirectional data channel. Data written to the write end of the pipe is buffered by the operating system until it is read from the read end of the pipe. Two-way data streams between processes can be achieved by creating two pipes utilizing standard input and output.
++ __Pipe__
+  
+  A unidirectional data channel. Data written to the write end of the pipe is buffered by the operating system until it is read from the read end of the pipe. Two-way data streams between processes can be achieved by creating two pipes utilizing standard input and output.
 
-### Named pipe
-A pipe implemented through a file on the file system instead of standard input and output. Multiple processes can read and write to the file as a buffer for IPC data.
++ __Named pipe__
+  
+  A pipe implemented through a file on the file system instead of standard input and output. Multiple processes can read and write to the file as a buffer for IPC data.
 
-### Shared memory
-Multiple processes are given access to the same block of memory which creates a shared buffer for the processes to communicate with each other.
++ __Shared memory__
+  
+  Multiple processes are given access to the same block of memory which creates a shared buffer for the processes to communicate with each other.
 
-### Message passing
-Allows multiple programs to communicate using message queues and/or non-OS managed channels, commonly used in concurrency models.
++ __Message passing__
+  
+  Allows multiple programs to communicate using message queues and/or non-OS managed channels, commonly used in concurrency models.
 
-### Memory-mapped file
-A file mapped to RAM and can be modified by changing memory addresses directly instead of outputting to a stream. This shares the same benefits as a standard file.
++ __Memory-mapped file__
+  
+  A file mapped to RAM and can be modified by changing memory addresses directly instead of outputting to a stream. This shares the same benefits as a standard file.
 
 ## Application
 
-### Remote procedure call interfaces
-In distributed computing, a remote procedure call (RPC) is when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is coded as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote.[1] This is a form of client–server interaction (caller is client, executor is server), typically implemented via a request–response message-passing system. In the object-oriented programming paradigm, RPC calls are represented by remote method invocation (RMI). The RPC model implies a level of location transparency, namely that calling procedures is largely the same whether it is local or remote, but usually they are not identical, so local calls can be distinguished from remote calls. Remote calls are usually orders of magnitude slower and less reliable than local calls, so distinguishing them is important.
++ __Remote procedure call interfaces_
+  
+  In distributed computing, a remote procedure call (RPC) is when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is coded as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote.[1] This is a form of client–server interaction (caller is client, executor is server), typically implemented via a request–response message-passing system. In the object-oriented programming paradigm, RPC calls are represented by remote method invocation (RMI). The RPC model implies a level of location transparency, namely that calling procedures is largely the same whether it is local or remote, but usually they are not identical, so local calls can be distinguished from remote calls. Remote calls are usually orders of magnitude slower and less reliable than local calls, so distinguishing them is important.
 
-### Platform communication stack
-utilize IPC mechanisms, but don't implement IPC themselves.
++ __Platform communication stack__
+  
+  utilize IPC mechanisms, but don't implement IPC themselves.
 
-### Operating system communication stack
-platform or programming language-specific APIs.
++ __Operating system communication stack__
+  
+  platform or programming language-specific APIs.
 
-### Distributed object models
-platform or programming language specific-APIs that use IPC, but do not themselves implement it.
++ __Distributed object models__
+  
+  platform or programming language specific-APIs that use IPC, but do not themselves implement it.
 
 # Runtime System
 A runtime system, also called run-time system, primarily __implements portions of an execution model.__ This is in contrast to the runtime lifecycle phase of a program, during which the runtime system is in operation. Most languages have some form of runtime system, which implements control over the order in which work that was specified in terms of the language gets performed. Over the years, the meaning of the term 'runtime system' has been expanded to include nearly any behaviors that are dynamically determined during execution.
@@ -285,9 +318,11 @@ A process VM, sometimes called an application virtual machine, or Managed Runtim
 ## Full virtualization
 In full virtualization, the virtual machine simulates enough hardware to __allow an unmodified "guest" OS (one designed for the same instruction set) to be run in isolation.__ This approach was pioneered in 1966 with the IBM CP-40 and CP-67, predecessors of the VM family.
 
-### Hardware-assisted virtualization
-In hardware-assisted virtualization, the hardware __provides architectural support that facilitates building a virtual machine monitor and allows guest OSes to be run in isolation.__ Hardware-assisted virtualization was first introduced on the IBM System/370 in 1972,[citation needed] for use with VM/370, the first virtual machine operating system offered by IBM as an official product.
++ __Hardware-assisted virtualization__
+  
+  In hardware-assisted virtualization, the hardware __provides architectural support that facilitates building a virtual machine monitor and allows guest OSes to be run in isolation.__ Hardware-assisted virtualization was first introduced on the IBM System/370 in 1972,[citation needed] for use with VM/370, the first virtual machine operating system offered by IBM as an official product.
 
-### Operating-system-level virtualization
-In operating-system-level virtualization, __a physical server is virtualized at the operating system level, enabling multiple isolated and secure virtualized servers to run on a single physical server.__ The "guest" operating system environments share the same running instance of the operating system as the host system. Thus, the same operating system kernel is also used to implement the "guest" environments, and applications running in a given "guest" environment view it as a stand-alone system. The pioneer implementation was FreeBSD jails; other examples include Docker, Solaris Containers, OpenVZ, Linux-VServer, LXC, AIX Workload Partitions, Parallels Virtuozzo Containers, and iCore Virtual Accounts.
++ __Operating-system-level virtualization__
+  
+  In operating-system-level virtualization, __a physical server is virtualized at the operating system level, enabling multiple isolated and secure virtualized servers to run on a single physical server.__ The "guest" operating system environments share the same running instance of the operating system as the host system. Thus, the same operating system kernel is also used to implement the "guest" environments, and applications running in a given "guest" environment view it as a stand-alone system. The pioneer implementation was FreeBSD jails; other examples include Docker, Solaris Containers, OpenVZ, Linux-VServer, LXC, AIX Workload Partitions, Parallels Virtuozzo Containers, and iCore Virtual Accounts.
 
