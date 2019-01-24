@@ -18,11 +18,27 @@ html {
                  'Segoe UI', 'Helvetica', 'Arial',
                  'sans-serif', 'Apple Color Emoji',
                  'Segoe UI Emoji', 'Segoe UI Symbol';
+    
+    @media screen and (max-width: 1000px) {
+        font-size: 10px;
+    }
 }
 
 body {
     margin: 0 auto;
     max-width: 800px;
+    @media screen and (max-width: 500px) {
+        max-width: 300px;
+    }
+}
+
+footer {
+    margin-top: 5em;
+    height: 5em;
+    div {
+        text-align: right;
+        margin-top: 2em;
+    }
 }
 
 section {
@@ -56,8 +72,5 @@ li {
     margin-bottom: 0.8em;
 }
 
-footer {
-    height: 1000px;
-}
+/* layout */
 
-/* Class */
