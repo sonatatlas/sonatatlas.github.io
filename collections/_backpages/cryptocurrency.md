@@ -43,8 +43,3 @@ Electronic transactions for all. Without censorship or restrictions.
 
 Grin empowers anyone to transact or save modern money without the fear of external control or oppression. Grin is designed for the decades to come, not just tomorrow. Grin wants to be usable by everyone, regardless of borders, culture, skills or access.
 A cryptocurrency (or crypto currency) is a digital asset designed to work as a medium of exchange that uses strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets. Cryptocurrencies are a kind of alternative currency and digital currency (of which virtual currency is a subset). Cryptocurrencies use decentralized control as opposed to centralized digital currency and central banking systems.
-## Polkadot
-It consists of many parachains with potentially differing characteristics which can make it easier to achieve anonymity or formal verification. Transactions can be spread out across the chains, allowing many more to be processed in the same period of time. Polkadot ensures that each of these blockchains remains secure and that any dealings between them are faithfully executed. Specialised parachains called bridges can be created to link independent chains.
-
-## Nervos
-A common knowledge base for blockchains and applications.

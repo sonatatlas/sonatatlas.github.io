@@ -6,10 +6,9 @@ slug: I was so much older than, I'm younger than that now.
 ---
 
 <ul>
-    {% for post in site.posts %}
+    {% for backpage in site.backpages %}
   <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ category.slug | markdownify }}</p>
+    <h2><a href="{{ backpage.url }}">{{ backpage.title }}</a></h2>
   </li>
   {% endfor %}
 </ul>

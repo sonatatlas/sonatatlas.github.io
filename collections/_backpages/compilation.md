@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Compilation
+tag: concepts
 ---
-
 
 [Preprocessor](#preprocessor)
 In computer science, a preprocessor is a program that processes its input data to produce output that is used as input to another program.

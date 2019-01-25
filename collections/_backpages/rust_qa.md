@@ -9,7 +9,6 @@ layout: default
 
 [1]: https://doc.rust-lang.org/rust-by-example/index.html
 
-
 # 01
 ## Show u8 slice in hex representation - [stackoverflow][s-1]
 

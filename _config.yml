@@ -42,8 +42,11 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+collections_dir: 
+  collections
+
 collections:
   categories:
     output: true
-  posts:
+  backpages:
     output: true
