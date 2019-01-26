@@ -9,6 +9,20 @@ layout: default
 
 [1]: https://doc.rust-lang.org/rust-by-example/index.html
 
+# 05
+## self, mut self, &self, &mut self
+
+# 04
+## Deref && MutDeref
+
+# 03
+## AsRef
+
+# 02
+## Generics, `fn method<T: Type>(para: T)` or `fn method<T>(para: T) -> () where T: type`
+
+---
+
 # 01
 ## Show u8 slice in hex representation - [stackoverflow][s-1]
 

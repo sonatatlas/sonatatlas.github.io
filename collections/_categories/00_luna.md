@@ -5,6 +5,15 @@ title: Luna
 slug: Take your protein pills and put your helmet on.
 ---
 
+# RFC
++ Chain 与 Transactions 的耦合是无法解除的，Chain 是存储 Transactions 的数据结构，Chain 数据结构的构建需要 Transactions，Chain 是包裹 Transactions 的。
++ impl Display Trait for basic types.
++ 关于 primitives 的内容，一开始决定为各个模块的基础类型，后来发现其中有不少冲突，一些模块不得不嵌套，正在改进中。
++ 默克尔树的用途，默克尔树如何防止篡改。
++ Pow 与随机数(nonce)
++ 挖矿的流程
+
+
 ## 02
 __第二周__
 
