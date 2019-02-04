@@ -42,6 +42,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+format: "%b %-d, %Y"
+
 collections_dir: 
   collections
 
@@ -49,4 +51,6 @@ collections:
   categories:
     output: true
   backpages:
+    output: true
+  lifestory:
     output: true
