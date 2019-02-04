@@ -9,6 +9,35 @@ layout: default
 
 [1]: https://doc.rust-lang.org/rust-by-example/index.html
 
+<!-- rust docs -->
+[r-1]: https://doc.rust-lang.org/std/fmt/index.html#width
+[r-2]: https://doc.rust-lang.org/std/ops/trait.Deref.html
+
+<!-- question links -->
+[s-1]: https://stackoverflow.com/questions/27650312/show-u8-slice-in-hex-representation/54302798?noredirect=1#comment95439998_54302798
+[s-2]: https://stackoverflow.com/questions/32552593/is-it-possible-for-one-struct-to-extend-an-existing-struct-keeping-all-the-fiel/54
+[s-9]: https://stackoverflow.com/questions/23975391/how-to-convert-a-string-into-a-static-str
+
+
+# 09
+## How to convert a String into a &'static str? - [stackoverflow][s-9]
+
+```
+let s: String = "string".to_owned();
+let s_slice: &str = &s[..];
+```
+
+# 08
+## to_owned() vs clone() vs mut
+
+# 07
+## Loop and Iter
+
+# 06
+## b"" vs "".to_bytes()
++ `b""` for `reference` -> &[u8; xx]
++ `to_bytes()` for `new memory`
+
 # 05
 ## self, mut self, &self, &mut self
 
@@ -16,12 +45,11 @@ layout: default
 ## Deref && MutDeref
 
 # 03
-## AsRef
+## AsRef, Ref, &, .as_ref()
 
 # 02
 ## Generics, `fn method<T: Type>(para: T)` or `fn method<T>(para: T) -> () where T: type`
 
----
 
 # 01
 ## Show u8 slice in hex representation - [stackoverflow][s-1]
@@ -79,12 +107,3 @@ fn main() {
   println!("your child is {}, {} years old.", child.gender, child.age);
 }
 ```
-
-
-<!-- rust docs -->
-[r-1]: https://doc.rust-lang.org/std/fmt/index.html#width
-[r-2]: https://doc.rust-lang.org/std/ops/trait.Deref.html
-
-<!-- question links -->
-[s-1]: https://stackoverflow.com/questions/27650312/show-u8-slice-in-hex-representation/54302798?noredirect=1#comment95439998_54302798
-[s-2]: https://stackoverflow.com/questions/32552593/is-it-possible-for-one-struct-to-extend-an-existing-struct-keeping-all-the-fiel/54301034#54301034
