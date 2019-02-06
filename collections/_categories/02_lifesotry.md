@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Life story
-slug: Life story, love and glory.
+permalink: /life-story
+title: Life Story
+slug: Life Story, Love and Glory.
 ---
 
 {% for story in site.lifestory %}
