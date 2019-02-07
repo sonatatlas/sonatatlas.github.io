@@ -22,7 +22,7 @@ layout: default
 # 09
 ## How to convert a String into a &'static str? - [stackoverflow][s-9]
 
-```
+```rust
 let s: String = "string".to_owned();
 let s_slice: &str = &s[..];
 ```
