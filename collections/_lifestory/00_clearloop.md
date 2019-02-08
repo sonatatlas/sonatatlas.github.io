@@ -1,7 +1,7 @@
 ---
 layout: default
 title: clearloop
-slug: Nov 18, 2017 - Nov 18, 2018
+slug: Nov 18, 2018 -
 ---
 
 {%- for post in site.posts -%}
