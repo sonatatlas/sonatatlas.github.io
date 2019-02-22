@@ -1,5 +1,5 @@
 ---
-title: 图解密码学概念整理
+title: Graphical Cryptography
 layout: default
 ---
 
