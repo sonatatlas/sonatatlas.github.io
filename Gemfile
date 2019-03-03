@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
 # Happy Jekylling!
-gem "jekyll", "~> 3.8"
-gem "jekyll-theme-clearloop", "~> 0.1.0"
+gem "jekyll", "~> 3.7.4"
+gem "jekyll-theme-clearloop", "~> 0.1.2"
 
 # Plugins
 group :jekyll_plugins do
