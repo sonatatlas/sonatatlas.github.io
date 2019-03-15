@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 # Happy Jekylling!
 gem "jekyll", "~> 3.7.4"
-gem "jekyll-theme-clearloop", "~> 0.1.3"
+gem "jekyll-theme-clearloop", "~> 0.1.5"
 
 # Plugins
 group :jekyll_plugins do
