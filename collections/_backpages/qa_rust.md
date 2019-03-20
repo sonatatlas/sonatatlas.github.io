@@ -18,6 +18,35 @@ layout: default
 [s-2]: https://stackoverflow.com/questions/32552593/is-it-possible-for-one-struct-to-extend-an-existing-struct-keeping-all-the-fiel/54
 [s-9]: https://stackoverflow.com/questions/23975391/how-to-convert-a-string-into-a-static-str
 
+# 10 
+## Sync
+```
+struct Arc;
+struct Barrier;
+struct Condvar;
+struct Mutex;
+struct Once;
+struct RawLock;
+struct Weak;
+```
+
+## Thread
+```
+struct Thread;
+impl Thread {
+  fn current() -> Thread
+  fn panicking() -> bool
+  fn park();
+  fn sleep();
+  fn spawn() -> JoinHandle<T>
+  fn yeild_now();
+}
+```
+## Channel
+```
+fn channel() -> (Sender<T>, Receiver<T>);
+```
+
 
 # 09
 ## How to convert a String into a &'static str? - [stackoverflow][s-9]
