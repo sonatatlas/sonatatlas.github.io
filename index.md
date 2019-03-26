@@ -3,7 +3,7 @@ layout: default
 title: Clearloop
 ---
 
-{% for category in site.categories %}
-<h2><a href="{{ category.url }}">{{ category.title }}</a></h2>
-<p>{{ category.slug }}</p>
+{% for enter in site.categories.home %}
+<h2><a href="{{enter.url}}">{{ enter.title }}</a></h2>
+<p>{{ enter.slug }}</p>
 {% endfor %}

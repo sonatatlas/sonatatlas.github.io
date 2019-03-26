@@ -16,15 +16,15 @@ plugins:
 
 # Posts
 format: "%b %-d, %Y"
-collections_dir: 
-  collections
-
-collections:
-  categories:
-    output: true
-  backpages:
-    output: true
-  lifestory:
-    output: true
-  permalinks:
-    output: true
+# collections_dir: 
+#   collections
+# 
+# collections:
+#   categories:
+#     output: true
+#   backpages:
+#     output: true
+#   lifestory:
+#     output: true
+#   permalinks:
+#     output: true
