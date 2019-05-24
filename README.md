@@ -1,4 +1,4 @@
-# [Clearloop.github.io](https://clearloop.github.io/)
+# Clearloop.github.io
 
 + [Luna](https://clearloop.github.io/luna)
 
