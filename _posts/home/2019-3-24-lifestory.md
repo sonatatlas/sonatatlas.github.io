@@ -2,6 +2,7 @@
 layout: default
 title: Life Story
 slug: Life Story, Love and Glory.
+permalink: /lifestory/
 category: home
 ---
 

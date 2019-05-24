@@ -1,6 +1,7 @@
 ---
 layout: default
 title: My Back Pages
+permalink: /backpages/
 slug: I was so much older than, I'm younger than that now.
 categories: [ home ]
 ---
