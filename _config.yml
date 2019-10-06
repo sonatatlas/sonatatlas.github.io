@@ -8,7 +8,7 @@ description: >-
 
 # Build settings
 theme: jekyll-theme-clearloop
-remote_theme: clearloop/jekyll-theme-clearloop
+remote_theme: udtrokia/jekyll-theme-clearloop
 markdown: kramdown
 highlighter: rouge
 plugins:
