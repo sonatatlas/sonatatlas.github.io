@@ -6,8 +6,6 @@ category: lifestory
 ---
 
 {%- for post in site.categories.clearloop -%}
-<h1>{{ post.title }}</h1>
+<h2><a href="{{ post.url}}">{{ post.title }}</a></h2>
 <p>{{ post.date | date: site.format }}</p>
-{{ post.content }}
-<hr style="margin-top: 5vw;">
 {%- endfor -%}
